@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(141, 141, 141);
+    font-size: 25px;
+}
+
+:root {
+    color: white;
+}
+
+body {
+}
+
+.title {
+    text-align: center;
+    margin: 0 auto;
+}
+
+ul.list {
+    display: grid;
+    grid-template: auto / auto auto;
+}
+
+li {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 30px;
+    padding: 5px 12px;
+    border: black solid;
+}
+
+img {
+    max-width: 320px;
+    max-height: 260px;
+    margin: 20px 0;
+}
+
+li>h3 {
+    margin: 20px 0 0 0;
+    align-self: center;
+    justify-self: end;
+}
+
+/* 
+      <h1 className="title">Produtos</h1>
+
+      <ul className="list">
+        { produtos.map( (item, index) => 
+            <li className="list-item" key={ `produto-item-list-${ index } `}>
+              <h2 className="item-name">{ item.nome }</h2>
+              <img className="item-image" src={ item.image } alt={ item.nome } />
+              <h3 className="item-price">{ item.preco }</h3>
+*/
